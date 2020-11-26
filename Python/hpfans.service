@@ -1,0 +1,12 @@
+[Unit]
+Description=TmxPro's fanmod script
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/python3 /opt/fanmod/controller.py --config /etc/fanmod.ini
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

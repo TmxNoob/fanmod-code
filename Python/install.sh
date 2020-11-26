@@ -8,4 +8,4 @@ cp hpfans.service /etc/systemd/system/
 mkdir /opt/fanmod
 cp controller.py /opt/fanmod
 cp exampleconfig.ini /etc/fanmod.ini
-systemctl reload-daemon
+systemctl daemon-reload
